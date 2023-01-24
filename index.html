@@ -1,1 +1,74 @@
-<h1>Hello World!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+    <header>
+        <img src="assets/images/id.jpg" alt="photo of me">
+        <h1>Ethan Logue</h1>
+        <p>Studying Web and Mobile Computing @ RIT</p>
+    </header>
+    
+    <nav>
+
+        <h2>Class Projects</h2>
+        <ul>
+            <!-- <li class="un"><a href="https://people.rit.edu/eml8469/iste140/project2/">Project 2 - Basic HTML and Styling</a></li> -->
+            <!-- We selected two other students' earlier single-page websites to create this multipage one. Mine was the Visual Culture page. -->
+            <li class="un"><a href="https://people.rit.edu/eml8469/iste140/project3/">ISTE 140 Final Project - Multipage Website with Navigation Bar</a></li>
+            <li class="un"><a href="https://people.rit.edu/eml8469/ISTE240/myproj/">ISTE 240 Final Project - WIP</a></li>
+        </ul>
+ 
+        <h2>Outside of Class</h2>
+        <ul>
+            <li class="un"><a href="https://people.rit.edu/eml8469/iste140/Roblox%20Application/">Video Editing Portfolio for Job Application</a></li>
+            <li>This Portfolio</li>
+        </ul>
+ 
+        <h2>Class Assignments</h2>
+        <ul>
+            <li class="un"><a href="https://people.rit.edu/eml8469/iste140/assignment08/">A8 - Contact Form w/ RWD</a></li>
+        </ul>
+
+    </nav>
+
+    <section>
+        <h2>Bio</h2>
+
+        <h3>Hometown</h3>
+        <p>Lancaster, PA</p>
+    <!-- </section> -->
+
+    <!-- </section> -->
+        <h3>Hobbies</h3>
+        <ul>
+            <li>Bouldering</li>
+            <li>Building Legos</li>
+            <li>Video Editing</li>
+            <li>Computer Maintenance</li>
+        </ul>
+    </section>
+
+    <footer>
+        <h3>Contact Info</h3>
+        <p>Email: <a href="mailto:eml8469@rit.edu">eml8469@rit.edu</a></p>
+        <p>Cell: <a href="tel:7175759951">(717) 575-9951</a></p>
+    </footer>
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+                document.getElementsByTagName("header").style.fontSize = "30px";
+            } else {
+                document.getElementsByTagName("header").style.fontSize = "90px";
+            }
+        }
+    </script>
+</body>
+</html>
