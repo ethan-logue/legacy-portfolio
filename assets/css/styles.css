@@ -11,15 +11,20 @@ body {
 body, html {
 	overflow: hidden;
 }
+
 svg {
 	width: 100%;
-	height: 101vh;
+	height: 100vh;
+    transform: scaleX(-1);
+    position: relative;
+    z-index: 1;
 }
 
 header {
     position: absolute;
     left: 40px;
     top: 42px;
+    z-index: 2;
 }
 
 h1 {
@@ -70,39 +75,63 @@ a {
 
 a:hover {
     color: #12adeb;
+    font-size: 20px;
 }
 
-#bio {
+img {
+    width: 100%;
+    max-width: 24px;
+    transition: ease-in .2s;
+}
+
+img:hover {
+    transform: scale(1.25);
+}
+
+main {
     position: absolute;
     margin: 0;
     bottom: 42px;
     right: 50px;
+    z-index: 2;
+}
+
+#bio {
     max-width: 150px;
 }
 
 #projects {
-    position: absolute;
-    margin: 0;
-    right: 45px;
-    top: 42px;
     text-align: right;
 }
 
+#projects > ul {
+    margin-top: -10px;
+}
+
+#projects > ul > li {
+    padding-top: 5px;
+    font-weight: 100;
+}
+
+#projects > ul > li > a {
+    font-weight: 400;
+    font-size: larger;
+}
+
 #contact {
-    position: absolute;
-    margin: 0;
-    bottom: 42px;
-    right: 50px;
     text-align: right;
 }
 
 #contact > p {
     margin-top: -10px;
+    padding-top: 5px;
 }
 
 @media(max-width:980px) {
     /* make text bigger, fix border */
 }
+
+/***** BACKGROUND *****/
 
 @keyframes rotate {
     100% {
