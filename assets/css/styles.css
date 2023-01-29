@@ -81,16 +81,6 @@ a:hover {
     font-size: 20px;
 }
 
-img {
-    width: 100%;
-    max-width: 24px;
-    transition: ease-in .2s;
-}
-
-img:hover {
-    transform: scale(1.25);
-}
-
 main {
     position: absolute;
     margin: 0;
@@ -113,6 +103,11 @@ span {
     font-weight: 100;
     font-size: medium;
     color: #d1d1d1;
+    transition: ease-in .2s;
+}
+
+span:hover {
+    color: #12adeb;
 }
 
 #projects > ul {
@@ -123,6 +118,10 @@ span {
     padding-top: 5px;
 }
 
+.project-item:hover span {
+    color: #12adeb;
+}
+
 #projects > ul > li > a {
     font-weight: 400;
     font-size: larger;
@@ -130,11 +129,37 @@ span {
 
 #contact {
     text-align: right;
+    margin-bottom: 28px;
 }
 
 #contact > p {
     margin-top: -10px;
     padding-top: 5px;
+}
+
+#contact > ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+
+img {
+    width: 100%;
+    max-width: 24px;
+    transition: ease-in .2s;
+}
+
+img:hover {
+    transform: scale(1.25);
+}
+
+#linkedin {
+    position: absolute;
+}
+
+#github {
+    position: absolute;
+    right: 40px;
 }
 
 @media (max-width: 800px) and (orientation: portrait) {
