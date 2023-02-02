@@ -9,6 +9,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* creates an inner body that allows for the border effect */
 .innerBody {
     border: 1px solid #eeeded;
     position: relative;
@@ -23,7 +24,7 @@ svg {
     top: 0;
 	width: 100vw;
 	height: 100vh;
-    transform: scaleX(-1);
+    transform: scaleX(-1); /* flips svg horizontally so everything is more readable */
     position: absolute;
     z-index: 1;
 }
@@ -33,6 +34,7 @@ header {
     left: 30px;
     top: 30px;
     z-index: 2;
+    width: 75vw;
 }
 
 h1 {
@@ -41,7 +43,7 @@ h1 {
     font-size: 57px;
     position: relative;
     top: 0px;
-    left: 8px;
+    left: 7px;
     margin: 0;
 }
 
@@ -71,7 +73,7 @@ ul {
 
 nav > ul {
     margin-top: 50px;
-    left: -27px;
+    left: -28px;
 }
 
 nav > ul > li {
@@ -98,7 +100,7 @@ main {
 }
 
 #bio {
-    max-width: 200px;
+    max-width: 250px;
     line-height: 1.5em;
     margin-bottom: -20px;
 }
@@ -107,6 +109,15 @@ main {
     text-align: right;
 }
 
+#projects > ul {
+    margin-top: -10px;
+}
+
+#projects > ul > li {
+    padding-top: 5px;
+}
+
+/* next four relate to the project links and makes them one big link with different styles */
 span {
     font-family: 'Roboto Light';
     font-weight: 100;
@@ -117,14 +128,6 @@ span {
 
 span:hover {
     color: #12adeb;
-}
-
-#projects > ul {
-    margin-top: -10px;
-}
-
-#projects > ul > li {
-    padding-top: 5px;
 }
 
 .project-item:hover span {
@@ -146,8 +149,8 @@ span:hover {
     padding-top: 5px;
 }
 
+/* styling for the image links */
 #contact > ul {
-    list-style: none;
     display: flex;
     justify-content: right;
 }
@@ -162,6 +165,7 @@ img:hover {
     transform: scale(1.25);
 }
 
+/* keeps the other contact links from being pushed up */
 #linkedin {
     position: absolute;
 }
@@ -171,14 +175,35 @@ img:hover {
     right: 40px;
 }
 
-@media (max-width: 800px) {
-    /* make text bigger, fix border */
+@media (max-width: 800px) { /* fixes the width of the svg so it doesn't get messed up on taller screens */
+    .innerBody {
+        width: 70vw;
+    }
+
     svg {
         width: 800px;
     }
+}
 
+@media (max-width: 1000px) and (orientation: portrait) { /* width of 1000 accounts for ipads and portrait keeps smaller landscape devices from getting the styling */
     .innerBody {
-        width: 70vw;
+        height: 75vh;
+    }
+}
+
+@media (max-width: 415px) and (orientation: portrait) { /* screen gets too small and pushes things closer to border */
+    header {
+        margin-top: -25px;
+        margin-left: -25px;
+    }
+
+    main {
+        bottom: 20px;
+        right: 25px;
+    }
+
+    #bio {
+        left: 20px;
     }
 }
 
