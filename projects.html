@@ -3,49 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="./assets/css/styles.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
     <title>Ethan's Projects</title>
 </head>
 <body>
 
-    <header>
+    <div class="innerBody">
 
-        <h1>Ethan Logue</h1>
-        <p id="subtitle">Studying Web and Mobile Computing @ RIT</p>
+        <header>
+            
+            <h1>Ethan Logue</h1>
+            <p id="subtitle">Studying Web and Mobile Computing @ RIT</p>
+        
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li>&#9722;</li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
     
-        <nav>
+        </header>
+    
+        <main id="projects">
+
+            <h2>Projects</h2>
             <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li>&#9722;</li>
-                <li><a href="./contact.html">Contact</a></li>
+                <!-- <li><a href="https://people.rit.edu/eml8469/ISTE240/myproj/">ISTE 240 Final Project - WIP</a></li> -->
+                <li><a class="project-item" href="#"><span>2023 / Personal Projects&ensp;</span>This Portfolio</a></li>
+                <li><a class="project-item" target="_blank" href="https://people.rit.edu/eml8469/iste140/Roblox%20Application/"><span>2022 / Personal Projects&ensp;</span>Video Editing Portfolio</a></li>
+                <li><a class="project-item" target="_blank" href="https://people.rit.edu/eml8469/iste140/project3/"><span>2022 / Class Projects&ensp;</span>Multipage Website w/ Navigation Bar</a></li>
+                <li><a class="project-item" target="_blank" href="https://people.rit.edu/eml8469/iste140/assignment08/"><span>2022 / Class Projects&ensp;</span>HTML Form w/ RWD</a></li>
             </ul>
-        </nav>
-
-    </header>
-
-    <main id="projects">
-
-        <h2>Projects</h2>
-        <ul>
-            <!-- <li><a href="https://people.rit.edu/eml8469/ISTE240/myproj/">ISTE 240 Final Project - WIP</a></li> -->
-            <li><a class="project-item" href="#"><span>2023 / Personal Projects&ensp;</span>This Portfolio</a></li>
-            <li><a class="project-item" target="_blank" href="https://people.rit.edu/eml8469/iste140/Roblox%20Application/"><span>2022 / Personal Projects&ensp;</span>Video Editing Portfolio</a></li>
-            <li><a class="project-item" target="_blank" href="https://people.rit.edu/eml8469/iste140/project3/"><span>2022 / Class Projects&ensp;</span>Multipage Website w/ Navigation Bar</a></li>
-            <li><a class="project-item" target="_blank" href="https://people.rit.edu/eml8469/iste140/assignment08/"><span>2022 / Class Projects&ensp;</span>HTML Form w/ RWD</a></li>
-        </ul>
-
-    </main>
-
-    <svg viewBox="24 105 156 95">
-
-        <rect x="0" y="0" width="300" height="300" fill="#141414"/>
-        <path class="top-outer" fill="#12adeb" stroke="#353433" stroke-width="1" d="M68 1c23,0 67,17 69,39 4,38 5,52 -5,69 -20,36 -68,46 -120,-9 -27,-28 -7,-101 56,-99z"/>
-        <path class="top-inner" fill="#a2cfec" stroke="#2763a8" stroke-width="1" d="M69 22c33,-7 52,21 54,37 3,26 -1,28 -8,40 -15,25 -48,25 -85,-14 -19,-20 -4,-53 39,-63z"/>
-        <path class="bottom-outer" fill="#2763a8" stroke="#353433" stroke-width="1" d="M158 158c30,13 56,50 44,75 -9,18 -22,46 -42,55 -20,10 -48,2 -73,-19 -29,-25 -27,-55 -9,-79 17,-22 43,-48 80,-32z"/>
-        <path class="bottom-inner" fill="#193e83" stroke="#a2cfec" stroke-width="1" d="M136 180c32,-9 45,13 46,29 3,27 8,29 0,42 -14,25 -52,24 -79,0 -21,-18 -2,-61 33,-71z"/>
     
-    </svg>
+        </main>
+    
+        <svg viewBox="24 105 156 95">
+    
+            <rect x="0" y="0" width="300" height="300" fill="#141414"/>
+            <path class="top-outer" fill="#12adeb" stroke="#353433" stroke-width="1" d="M68 1c23,0 67,17 69,39 4,38 5,52 -5,69 -20,36 -68,46 -120,-9 -27,-28 -7,-101 56,-99z"/>
+            <path class="top-inner" fill="#a2cfec" stroke="#2763a8" stroke-width="1" d="M69 22c33,-7 52,21 54,37 3,26 -1,28 -8,40 -15,25 -48,25 -85,-14 -19,-20 -4,-53 39,-63z"/>
+            <path class="bottom-outer" fill="#2763a8" stroke="#353433" stroke-width="1" d="M158 158c30,13 56,50 44,75 -9,18 -22,46 -42,55 -20,10 -48,2 -73,-19 -29,-25 -27,-55 -9,-79 17,-22 43,-48 80,-32z"/>
+            <path class="bottom-inner" fill="#193e83" stroke="#a2cfec" stroke-width="1" d="M136 180c32,-9 45,13 46,29 3,27 8,29 0,42 -14,25 -52,24 -79,0 -21,-18 -2,-61 33,-71z"/>
+        
+        </svg>
+
+    </div>
 
 </body>
 </html>

@@ -1,29 +1,37 @@
 body {
-    margin: 50px;
-    height: 92vh;
+    margin: 0; 
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
     background-color: #0c0c0c;
     color: #eeeded;
     font-family: 'Roboto', sans-serif;
-    border: 1px solid #eeeded;
-    position: relative;
 }
 
-body, html {
-	overflow: hidden;
+.innerBody {
+    border: 1px solid #eeeded;
+    position: relative;
+    padding: 10vh 10vw;
+	width: 75vw;
+	height: 70vh;
+    overflow: hidden;
 }
 
 svg {
-	width: 100%;
+    left: 0;
+    top: 0;
+	width: 100vw;
 	height: 100vh;
     transform: scaleX(-1);
-    position: relative;
+    position: absolute;
     z-index: 1;
 }
 
 header {
     position: absolute;
-    left: 40px;
-    top: 42px;
+    left: 30px;
+    top: 30px;
     z-index: 2;
 }
 
@@ -85,13 +93,14 @@ main {
     position: absolute;
     margin: 0;
     bottom: 42px;
-    right: 50px;
+    right: 42px;
     z-index: 2;
 }
 
 #bio {
     max-width: 200px;
     line-height: 1.5em;
+    margin-bottom: -20px;
 }
 
 #projects {
@@ -162,10 +171,14 @@ img:hover {
     right: 40px;
 }
 
-@media (max-width: 800px) and (orientation: portrait) {
+@media (max-width: 800px) {
     /* make text bigger, fix border */
     svg {
         width: 800px;
+    }
+
+    .innerBody {
+        width: 70vw;
     }
 }
 
