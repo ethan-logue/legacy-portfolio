@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+<body>
+    <h1>Take our surey!</h1>
+
+    <form method="post" action="form-processor.php">
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" required>
+        </div>
+
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div>
+            <label for="phone">Phone Number: </label>
+            <input type="tel" name="phone" id="phone" required>
+        </div>
+
+        <fieldset>
+            <legend>PUP Facts About You!</legend>
+
+            <h2>What do you like about PUP?</h2>
+
+            <div>
+                <input type="checkbox" name="personalityCheck" id="personalityCheck" value="Personality">
+                <label for="personalityCheck">Personality</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="genreCheck" id="genreCheck" value="Genre">
+                <label for="genreCheck">Genre</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="concertCheck" id="concertCheck" value="Concerts">
+                <label for="concertCheck">Concerts</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="artCheck" id="artCheck" value="Art Style">
+                <label for="artCheck">Art Style</label>
+            </div>
+
+
+            <h2>What's your favorite PUP album?</h2>
+
+            <div>
+                <input type="radio" name="favoriteSelect" id="selfTitled" value="Self-Titled">
+                <label for="selfTitled">Self-Titled</label>
+            </div>
+
+            <div>
+                <input type="radio" name="favoriteSelect" id="dreamOver" value="The Dream is Over">
+                <label for="dreamOver">The Dream is Over</label>
+            </div>
+
+            <div>
+                <input type="radio" name="favoriteSelect" id="morbidStuff" value="Morbid Stuff">
+                <label for="morbidStuff">Morbid Stuff</label>
+            </div>
+
+            <div>
+                <input type="radio" name="favoriteSelect" id="unraveling" value="The Unraveling of PUPTheBand">
+                <label for="unraveling">The Unraveling of PUPTheBand</label>
+            </div>
+
+        </fieldset>
+
+        <div>
+            <label for="howFound">Tell us how you found PUP: </label><br>
+            <textarea name="howFound" id="howFound"></textarea>
+        </div>
+
+        <input type="submit" value="Submit Here!">
+    </form>
+    
+</body>
+</html>
