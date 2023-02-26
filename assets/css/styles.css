@@ -88,6 +88,9 @@ a {
 
 a:hover {
     color: #12adeb;
+}
+
+.navItem:hover {
     font-size: 20px;
 }
 
