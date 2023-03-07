@@ -3,10 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="./assets/css/styles.css" rel="stylesheet">
+    <!-- <link href="./assets/css/styles.css" rel="stylesheet"> -->
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
-    <title>Ethan's Portfolio</title>
+    <title>Uh Oh!</title>
 </head>
+
+<!-- need to use internal styling (i know) since I'm not sure how to access the css 
+     file if a 404 error is thrown on one of the pages in the projects subfolder -->
+<style>
+    body {
+        margin: 0; 
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0c0c0c;
+        color: #eeeded;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    h1 {
+        /* font-family: 'Roboto Thin'; */
+        font-weight: 100;
+        font-size: 57px;
+        position: relative;
+        top: 0px;
+        left: 7px;
+        margin: 0;
+    }
+
+    /* creates an inner body that allows for the border effect */
+    .innerBody {
+        border: 1px solid #eeeded;
+        position: relative;
+        padding: 10vh 10vw;
+        width: 75vw;
+        height: 70vh;
+        overflow: hidden;
+    }
+
+    svg {
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        transform: scaleX(-1); /* flips svg horizontally so everything is more readable */
+        position: absolute;
+        z-index: 1;
+    }
+
+    header {
+        position: absolute;
+        left: 30px;
+        top: 30px;
+        z-index: 2;
+        width: 75vw;
+    }
+
+    .subtitle {
+        /* font-family: 'Roboto Light'; */
+        margin: 0;
+        position: relative;
+        left: 12px;
+        top: 10px;
+    }
+
+    nav {
+        /* font-family: 'Roboto'; */
+        margin: auto;
+    }
+
+    ul {
+        list-style: none;
+        position: relative;
+        margin: 0;
+    }
+
+    nav > ul {
+        margin-top: 50px;
+        left: -28px;
+    }
+
+    nav > ul > li {
+        padding-top: 5px;
+    }
+
+    a {
+        color: #eeeded;
+        text-decoration: none;
+        transition: ease-in .2s;
+    }
+
+    a:hover {
+        color: #12adeb;
+    }
+
+    .navItem:hover {
+        font-size: 20px;
+    }
+
+    main {
+        position: absolute;
+        margin: 0;
+        bottom: 42px;
+        right: 42px;
+        z-index: 2;
+    }
+
+    @media (max-width: 800px) { /* fixes the width of the svg so it doesn't get messed up on taller screens */
+        .innerBody {
+            width: 70vw;
+        }
+
+        svg {
+            width: 800px;
+        }
+    }
+
+    @media (max-width: 1000px) and (orientation: portrait) { /* width of 1000 accounts for ipads and portrait keeps smaller landscape devices from getting the styling */
+        .innerBody {
+            height: 75vh;
+        }
+    }
+
+    @media (max-width: 415px) and (orientation: portrait) { /* screen gets too small and pushes things closer to border */
+        header {
+            margin-top: -25px;
+            margin-left: -25px;
+        }
+
+        main {
+            bottom: 20px;
+            right: 25px;
+        }
+
+    }
+
+    /*** 404 PAGE ***/
+    #errorHeader {
+        font-size: 84px;
+        /* font-family: 'Roboto Light'; */
+    }
+
+    .errorSubtitle {
+        margin-top: 10px;
+        width: 500px;
+        line-height: 1.5em;
+    }
+
+    /***** BACKGROUND *****/
+    @keyframes rotate {
+    100% {
+        transform: rotate(360deg)
+    }
+    }
+
+    .top-outer {
+        transform-origin: 73px 69px;
+        animation: rotate 30s linear infinite;
+    }
+
+    .top-inner {
+        transform-origin: 73px 69px;
+        animation: rotate 20s linear infinite;
+    }
+
+    .bottom-outer {
+        transform-origin: 134px 222px;
+        animation: rotate 30s linear infinite;
+    }
+
+    .bottom-inner {
+        transform-origin: 134px  222px;
+        animation: rotate 20s linear infinite;
+    }
+</style>
+
 <body>
 
     <div class="innerBody">
@@ -14,13 +186,13 @@
         <header>
             
             <h1 id="errorHeader">:(</h1>
-            <p class="subtitle errorSubtitle">Looks like you got off course! Let me direct you back on track:</p>
+            <p class="subtitle errorSubtitle">Looks like you got off course! You can either press the back arrow or use one of the links below to get yourself back on track:</p>
             
             <nav>
                 <ul>
-                    <li><a class="navItem" href="./index.html">Home</a></li>
-                    <li><a class="navItem" href="./projects.html">Projects</a></li>
-                    <li><a class="navItem" href="./contact.html">Contact</a></li>
+                    <li><a class="navItem" href="https://ethan-logue.github.io/index.html">Home</a></li>
+                    <li><a class="navItem" href="https://ethan-logue.github.io/projects.html">Projects</a></li>
+                    <li><a class="navItem" href="https://ethan-logue.github.io/contact.html">Contact</a></li>
                 </ul>
             </nav>
             
