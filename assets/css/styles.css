@@ -52,7 +52,7 @@ h2 {
     font-weight: 100;
 }
 
-#subtitle {
+.subtitle {
     font-family: 'Roboto Light';
     margin: 0;
     position: relative;
@@ -208,6 +208,16 @@ img:hover {
     #bio {
         left: 20px;
     }
+}
+
+/*** 404 PAGE ***/
+#errorHeader {
+    font-size: 84px;
+    font-family: 'Roboto Light';
+}
+
+.errorSubtitle {
+    margin-top: 10px;
 }
 
 /***** BACKGROUND *****/
