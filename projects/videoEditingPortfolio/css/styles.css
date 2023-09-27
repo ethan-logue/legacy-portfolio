@@ -49,10 +49,6 @@ article {
     text-align: left;
     display: grid;
     column-gap: 20px;
-    /* left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 60%; */
 }
 
 article > #about {
@@ -135,7 +131,6 @@ a:hover {
 }
 
 a {
-    /* display: inline-block; */
     position: relative;
     color: #6495ED;
 }
@@ -158,12 +153,7 @@ a:after {
     transition: transform 0.25s ease-out;
 }
 
-#credit {
-    opacity: .3;
-}
-
 iframe {
-    /* display: block; */
     border-radius: 8px;
     margin-bottom: 16px;
     width: 100%;
@@ -178,8 +168,6 @@ iframe {
 }
 
 #hoopsLife > div {
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr; */
     display: flex;
     column-gap: 10px;
     flex-wrap: wrap;
@@ -187,7 +175,7 @@ iframe {
 }
 
 #hoopsLife > div > * {
-    flex: 1 1 345px; /*...play with these numbers*/
+    flex: 1 1 345px; 
 }
 
 .collapsible {
